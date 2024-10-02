@@ -1,8 +1,9 @@
 .main {
-    background-color: #282d35;
-    height: 100%;
     padding: 57px 27px;
     color: white;
+    background-image: url("../images/background-logo.png");
+    background-repeat: no-repeat;
+    background-position: right 75%;
 }
 
 .mainTitle {

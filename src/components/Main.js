@@ -1,10 +1,11 @@
 import styles from "./Main.module.css";
+import clsx from "../lib/clsx";
 
-function Main() {
+function Main(props) {
   return (
-    <main className={styles.main}>
-      <h1 className={styles.mainTitle}>Fun facts about React</h1>
-      <ul className={styles.mainFacts}>
+    <main className={clsx(styles.main, props.darkMode ? "dark" : "")}>
+      <h1 className={styles.main__title}>Fun facts about React</h1>
+      <ul className={styles.main__facts}>
         <li>Was first released in 2013</li>
         <li>Was originally created by Jordan Walke</li>
         <li>Has well over 100K stars on GitHub</li>

@@ -3,7 +3,7 @@ import clsx from "../lib/clsx";
 
 function Main(props) {
   return (
-    <main className={clsx(styles.main, props.darkMode ? "dark" : "")}>
+    <main className={clsx(styles.main, props.darkMode ? styles.dark : "")}>
       <h1 className={styles.main__title}>Fun facts about React</h1>
       <ul className={styles.main__facts}>
         <li>Was first released in 2013</li>

@@ -4,7 +4,7 @@ import clsx from "../lib/clsx";
 
 function Navbar(props) {
   return (
-    <nav className={clsx(styles.nav, props.darkMode ? "dark" : "")}>
+    <nav className={clsx(styles.nav, props.darkMode ? styles.dark : "")}>
       <img src={logo} alt="logo" className={styles.nav__logo_icon} />
       <h3 className={styles.nav__logo_text}>ReactFacts</h3>
 
